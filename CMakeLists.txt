@@ -12,7 +12,7 @@ endif()
 project ("VocaLowpass")
 
 # Add source to this project's executable.
-add_executable (VocaLowpass "VocaLowpass.cpp" "VocaLowpass.h" "LowPassFilter.cpp" "LowPassFilter.h")
+add_executable (VocaLowpass "VocaLowpass.cpp"  "LowPassFilter.cpp" "include/LowPassFilter.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET VocaLowpass PROPERTY CXX_STANDARD 20)
