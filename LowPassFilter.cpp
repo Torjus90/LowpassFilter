@@ -49,8 +49,8 @@ void LowPassFilter::configure()
     // This is the coefficients for a second order discretized butterworth filter with pre-warping baked into the coefficients
     // Taken from the excellent https://thewolfsound.com/bilinear-transform/
 
-    double T = 1 / m_samplingFreq;
-    double W = tan(m_cutoffFreq * 2 * M_PI * T / 2);
+    double T = 1 / this->m_samplingFreq;
+    double W = tan(this->m_cutoffFreq * 2 * M_PI * T / 2);
     double sqrt2 = sqrt(2);
     double W2 = W * W;
 
