@@ -1,9 +1,10 @@
 ﻿#define _USE_MATH_DEFINES
 
+#include "include/LowPassFilter.h"
+
 #include <iostream>
 #include <vector>
 #include <string>
-#include "include/LowPassFilter.h"
 #include <fstream>
 
 using namespace std;
