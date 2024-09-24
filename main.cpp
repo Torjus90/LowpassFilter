@@ -11,7 +11,7 @@ using namespace std;
 
 // The test function.
 // Could by all means be a member function of the LowPassFilter class
-void testFilter(LowPassFilter &filter);
+void TestFilter(LowPassFilter &filter);
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     double cutoffFreq = 15;
     LowPassFilter filter(cutoffFreq, samplingFreq);
 
-    testFilter(filter);
+    TestFilter(filter);
 
     return 0;
 }
@@ -30,7 +30,7 @@ int main()
 // 1: Run an input sequence of two sinusoids added together through the filter and save both input and output to a .csv to check it visually in e.g. Excel
 // 2: Test sinusoids with increasing frequencies for a couple of different cut off frequencies and observe the magnitude response.
 // 3: Check if an impulse response decays over time
-void testFilter(LowPassFilter &filter)
+void TestFilter(LowPassFilter &filter)
 {
     // ------------------------------------------------------------------------
     // First test. Two different, superimposed sinusoids.
