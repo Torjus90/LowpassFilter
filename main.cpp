@@ -91,7 +91,7 @@ void TestFilter(LowPassFilter &filter)
     }
 
     // ------------------------------------------------------------------------
-    // Second test. Check that the impulse response is decaying
+    // Third test. Check that the impulse response is decaying
     //
 
     cout << "Testing impulse response" << endl;
